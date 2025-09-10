@@ -38,7 +38,7 @@ Le modèle n’utilise que des **volumes** ; ils sont fournis **au total projet 
 * *(Optionnel)* `sms_push` : notifications envoyées (mois), utilisées seulement si l’on souhaite tester un driver “messaging”.
 Ces volumes sont transformés en **ratios par caméra** (ex. `gpu_pc = gpu_hours / nb_cameras`) puis passés en **log** pour estimer les élasticités.
 
-### Spécificités par verticale (rappels)
+### Spécificités par verticale 
 
 Les profils de consommation diffèrent :
 * **Aéroport** : calcul et logs **intensifs**.
@@ -51,7 +51,7 @@ Les profils de consommation diffèrent :
 Ces différences sont captées soit par des **dummies** (en estimation), soit par un **ajustement d’intercept** selon la verticale sélectionnée dans l’app.
 
 
-## 🧠 Modèle (résumé)
+## 🧠 Modèle générique de la démo (résumé)
 - Forme **log-linéaire** sur **volumes** (par caméra) : `ln(cu) ~ ln(nb_cam) + ln(GPU/cam) + ln(BW/cam) + ln(Storage/cam) + ln(Logs/cam) + ln(Dev h/cam)`.
 - **Effet verticale** via un **décalage d’intercept** (optionnel) issu d’une estimation avec dummies `Type` (Aéroport, Autoroute, etc.).
 - Lecture business : élasticités positives sur GPU/BW/Storage/Logs/Dev ; effet de taille (nb_cam) capturé.
