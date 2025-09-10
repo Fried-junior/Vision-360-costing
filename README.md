@@ -5,7 +5,7 @@
 
 ## 🔎 Contenu du dépôt
 - `app.R` — Application **Shiny** (simulateur prix–marge, coûts estimés par caméra et au total).
-- `data/vision360_synthetique.csv` — Jeu de données **simulé** réaliste (multi-verticales).
+- `dataVision360.csv` — Jeu de données **simulé** réaliste (multi-verticales).
 - `models/model_coefs.json` — Coefficients du **modèle poolé** (volumes uniquement).
 - `notebooks/01_modele_et_validation.Rmd` — Reproductibilité du modèle (estimations + diagnostics).
 - `docs/` — Captures d’écran, schémas, éventuelle doc additionnelle.
