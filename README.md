@@ -7,7 +7,6 @@
 - `app.R` — Application **Shiny** (simulateur prix–marge, coûts estimés par caméra et au total).
 - `dataVision360.csv` — Jeu de données **simulé** réaliste (multi-verticales).
 - `models/model_coefs.json` — Coefficients du **modèle poolé** (volumes uniquement).
-- `notebooks/01_modele_et_validation.Rmd` — Reproductibilité du modèle (estimations + diagnostics).
 - `docs/` — Captures d’écran, schémas, éventuelle doc additionnelle.
 
 ## 📦 Données : strictement **simulées**. Voir le *dataVision360* ci-dessus.
